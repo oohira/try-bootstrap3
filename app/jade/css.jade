@@ -1,0 +1,64 @@
+extends /layouts/_default
+
+block content
+
+  h3 Stacked-to-horizontal
+  p 外側から <code>.container</code> → <code>.row</code> → <code>.col-*</code> の順で囲む12カラムのGridシステム。 <code>.col-xs-*</code> を使うとスマートフォン (<768px)、<code>.col-sm-*</code> を使うとタブレット (<992px)、<code>.col-md-*</code> を使うとPC (<1200px)、<code>.col-lg-*</code> を使うとさらに大画面PCサイズでのGridを制御できる。
+
+  div.container
+    div.row.show-grid
+      div.col-md-1 .col-md-1
+      div.col-md-1 .col-md-1
+      div.col-md-1 .col-md-1
+      div.col-md-1 .col-md-1
+      div.col-md-1 .col-md-1
+      div.col-md-1 .col-md-1
+      div.col-md-1 .col-md-1
+      div.col-md-1 .col-md-1
+      div.col-md-1 .col-md-1
+      div.col-md-1 .col-md-1
+      div.col-md-1 .col-md-1
+      div.col-md-1 .col-md-1
+    div.row.show-grid
+      div.col-md-8 .col-md-8
+      div.col-md-4 .col-md-4
+    div.row.show-grid
+      div.col-md-4 .col-md-4
+      div.col-md-4 .col-md-4
+      div.col-md-4 .col-md-4
+    div.row.show-grid
+      div.col-md-6 .col-md-6
+      div.col-md-6 .col-md-6
+    div.row.show-grid
+      div.col-md-12 .col-md-12
+
+
+  h3 Fluid container
+  p <code>.container</code> に対して <code>.container-fluid</code> は幅全体に広がる。
+
+  div.container-fluid
+    div.row.show-grid
+      div.col-md-1 .col-md-1
+      div.col-md-1 .col-md-1
+      div.col-md-1 .col-md-1
+      div.col-md-1 .col-md-1
+      div.col-md-1 .col-md-1
+      div.col-md-1 .col-md-1
+      div.col-md-1 .col-md-1
+      div.col-md-1 .col-md-1
+      div.col-md-1 .col-md-1
+      div.col-md-1 .col-md-1
+      div.col-md-1 .col-md-1
+      div.col-md-1 .col-md-1
+    div.row.show-grid
+      div.col-md-8 .col-md-8
+      div.col-md-4 .col-md-4
+    div.row.show-grid
+      div.col-md-4 .col-md-4
+      div.col-md-4 .col-md-4
+      div.col-md-4 .col-md-4
+    div.row.show-grid
+      div.col-md-6 .col-md-6
+      div.col-md-6 .col-md-6
+    div.row.show-grid
+      div.col-md-12 .col-md-12
