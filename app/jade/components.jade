@@ -1,0 +1,101 @@
+extends /layouts/_default
+
+block content
+
+  h2 Glyphicons
+
+  div.example
+    div.btn-group(role="group" aria-label="Align")
+      button.btn.btn-default(type="button", aria-label="Left Align")
+        span.glyphicon.glyphicon-align-left(aria-hidden="true")
+      button.btn.btn-default(type="button", aria-label="Center Align")
+        span.glyphicon.glyphicon-align-center(aria-hidden="true")
+      button.btn.btn-default(type="button", aria-label="Right Align")
+        span.glyphicon.glyphicon-align-right(aria-hidden="true")
+      button.btn.btn-default(type="button", aria-label="Justify Align")
+        span.glyphicon.glyphicon-align-justify(aria-hidden="true")
+
+  div.example
+    button.btn.btn-default.btn-lg(type="button")
+      span.glyphicon.glyphicon-star(aria-hidden="true")
+      | Star
+    button.btn.btn-default(type="button")
+      span.glyphicon.glyphicon-star(aria-hidden="true")
+      | Star
+    button.btn.btn-default.btn-sm(type="button")
+      span.glyphicon.glyphicon-star(aria-hidden="true")
+      | Star
+    button.btn.btn-default.btn-xs(type="button")
+      span.glyphicon.glyphicon-star(aria-hidden="true")
+      | Star
+
+  div.example
+    div.alert.alert-danger(role="alert")
+      span.glyphicon.glyphicon-exclamation-sign(aria-hidden="true")
+      span.sr-only Error:
+      Enter a valid email address
+
+  h2 Dropdowns
+
+  div.example
+    div.dropdown
+      button.btn.btn-default.dropdown-toggle(type="button", id="dropdownMenu1", data-toggle="dropdown", aria-expanded="true") Dropdown
+        span.caret
+      ul.dropdown-menu(role="menu", aria-labelledby="dropdownMenu1")
+        li(role="presentation")
+          a(role="menuitem", tabindex="-1", href="#") Action
+        li(role="presentation")
+          a(role="menuitem", tabindex="-1", href="#") Another action
+        li(role="presentation")
+          a(role="menuitem", tabindex="-1", href="#") Something else here
+        li(role="presentation")
+          a(role="menuitem", tabindex="-1", href="#") Separated link
+
+  h3 Headers
+  p <code>.dropdown-header</code>で見出しアイテム
+  div.example
+    div.dropdown
+      button.btn.btn-default.dropdown-toggle(type="button", id="dropdownMenu2", data-toggle="dropdown", aria-expanded="true") Dropdown
+        span.caret
+      ul.dropdown-menu(role="menu", aria-labelledby="dropdownMenu2")
+        li.dropdown-header(role="presentation") Dropdown header 1
+        li(role="presentation")
+          a(role="menuitem", tabindex="-1", href="#") Action
+        li(role="presentation")
+          a(role="menuitem", tabindex="-1", href="#") Another action
+        li(role="presentation")
+          a(role="menuitem", tabindex="-1", href="#") Something else here
+        li.dropdown-header(role="presentation") Dropdown header 2
+        li(role="presentation")
+          a(role="menuitem", tabindex="-1", href="#") Separated link
+
+  h3 Divider
+  p <code>.divider</code>でセパレータ
+  div.example
+    div.dropdown
+      button.btn.btn-default.dropdown-toggle(type="button", id="dropdownMenu3", data-toggle="dropdown", aria-expanded="true") Dropdown
+        span.caret
+      ul.dropdown-menu(role="menu", aria-labelledby="dropdownMenu2")
+        li(role="presentation")
+          a(role="menuitem", tabindex="-1", href="#") Action
+        li(role="presentation")
+          a(role="menuitem", tabindex="-1", href="#") Another action
+        li(role="presentation")
+          a(role="menuitem", tabindex="-1", href="#") Something else here
+        li.divider(role="presentation")
+        li(role="presentation")
+          a(role="menuitem", tabindex="-1", href="#") Separated link
+
+  h3 Disabled menu items
+  p <code>.disabled</code>でグレーアウト
+  div.example
+    div.dropdown
+      button.btn.btn-default.dropdown-toggle(type="button", id="dropdownMenu4", data-toggle="dropdown", aria-expanded="true") Dropdown
+        span.caret
+      ul.dropdown-menu(role="menu", aria-labelledby="dropdownMenu4")
+        li(role="presentation")
+          a(role="menuitem", tabindex="-1", href="#") Regular link
+        li.disabled(role="presentation")
+          a(role="menuitem", tabindex="-1", href="#") Disabled link
+        li(role="presentation")
+          a(role="menuitem", tabindex="-1", href="#") Another link
