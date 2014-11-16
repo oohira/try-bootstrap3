@@ -99,3 +99,82 @@ block content
           a(role="menuitem", tabindex="-1", href="#") Disabled link
         li(role="presentation")
           a(role="menuitem", tabindex="-1", href="#") Another link
+
+
+  h2 Button groups
+
+  div.example
+    div.btn-group(role="group" aria-label="...")
+      button.btn.btn-default(type="button") Left
+      button.btn.btn-default(type="button") Middle
+      button.btn.btn-default(type="button") Right
+
+  h3 Button toolbar
+  p <code>.btn-toolbar</code>と組み合わせるとツールバーのボタンをグループ化できる。
+  div.example
+    div.btn-toolbar(role="toolbargroup" aria-label="...")
+      div.btn-group(role="group" aria-label="...")
+        button.btn.btn-default(type="button") 1
+        button.btn.btn-default(type="button") 2
+        button.btn.btn-default(type="button") 3
+        button.btn.btn-default(type="button") 4
+      div.btn-group(role="group" aria-label="...")
+        button.btn.btn-default(type="button") 5
+        button.btn.btn-default(type="button") 6
+        button.btn.btn-default(type="button") 7
+      div.btn-group(role="group" aria-label="...")
+        button.btn.btn-default(type="button") 8
+
+  h3 Sizing
+  p 個別のボタンにサイズ指定クラスを設定するのではなく、<code>.btn-group-*</code>でbutton groupに一括指定できる。
+  div.example
+    div.btn-group.btn-group-lg(role="group" aria-label="...")
+      button.btn.btn-default(type="button") Left
+      button.btn.btn-default(type="button") Middle
+      button.btn.btn-default(type="button") Right
+    br
+    div.btn-group(role="group" aria-label="...")
+      button.btn.btn-default(type="button") Left
+      button.btn.btn-default(type="button") Middle
+      button.btn.btn-default(type="button") Right
+    br
+    div.btn-group.btn-group-sm(role="group" aria-label="...")
+      button.btn.btn-default(type="button") Left
+      button.btn.btn-default(type="button") Middle
+      button.btn.btn-default(type="button") Right
+    br
+    div.btn-group.btn-group-xs(role="group" aria-label="...")
+      button.btn.btn-default(type="button") Left
+      button.btn.btn-default(type="button") Middle
+      button.btn.btn-default(type="button") Right
+
+  h3 Nesting
+  p <code>.btn-group</code>の入れ子も可能
+  div.example
+    div.btn-group(role="group" aria-label="...")
+      button.btn.btn-default(type="button") 1
+      button.btn.btn-default(type="button") 2
+      div.btn-group(role="group")
+        button.btn.btn-default.dropdown-toggle(type="button", data-toggle="dropdown" aria-expanded="false") Dropdown
+          span.caret
+        ul.dropdown-menu(role="menu")
+          li
+            a(href="#") Dropdown link
+          li
+            a(href="#") Dropdown link
+
+  h3 Vertical variation
+  p <code>.btn-group-vertical</code>で垂直方向に配置
+  div.example
+    div.btn-group-vertical(role="group" aria-label="...")
+      button.btn.btn-default(type="button") Button
+      button.btn.btn-default(type="button") Button
+      div.btn-group(role="group")
+        button.btn.btn-default.dropdown-toggle(type="button", data-toggle="dropdown" aria-expanded="false") Dropdown
+          span.caret
+        ul.dropdown-menu(role="menu")
+          li
+            a(href="#") Dropdown link
+          li
+            a(href="#") Dropdown link
+      button.btn.btn-default(type="button") Button

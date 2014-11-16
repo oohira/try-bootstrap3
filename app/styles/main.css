@@ -33,3 +33,7 @@ body {
     letter-spacing: 1px;
     content: "Example"
 }
+
+.example > .btn-group {
+    margin-bottom: 15px;
+}
