@@ -282,3 +282,94 @@ block content
         li.divider
         li
           a(href="#") Separated link
+
+
+  h2 Input groups
+
+  h3 Basic
+  p 入力コントロールの左右または両側にアドオンを追加できる。
+  div.example
+    div.input-group
+      span.input-group-addon @
+      input.form-control(type="text", placeholder="Username")
+    div.input-group
+      input.form-control(type="text")
+      span.input-group-addon .00
+    div.input-group
+      span.input-group-addon $
+      input.form-control(type="text")
+      span.input-group-addon .00
+
+  h3 Sizing
+  p <code>.input-group-*</code>でグループ内のサイズを一括指定できる。
+  div.example
+    div.input-group.input-group-lg
+      span.input-group-addon @
+      input.form-control(type="text", placeholder="Username")
+    div.input-group
+      span.input-group-addon @
+      input.form-control(type="text", placeholder="Username")
+    div.input-group.input-group-sm
+      span.input-group-addon @
+      input.form-control(type="text", placeholder="Username")
+
+  h3 Checkboxes and radio addons
+  p テキストではなくチェックボックスやラジオボタンのアドオンを作ることもできる。
+  div.example
+    div.input-group
+      span.input-group-addon
+        input(type="checkbox")
+      input.form-control(type="text")
+    div.input-group
+      span.input-group-addon
+        input(type="radio")
+      input.form-control(type="text")
+
+  h3 Button addons
+  p ボタンを使う場合には<code>.input-group-addon</code>の代わりに<code>.input-group-btn</code>で囲む必要がある（ブラウザの動作上の制約）。
+  div.example
+    div.input-group
+      span.input-group-btn
+        button.btn.btn-default(type="button") Go!
+      input.form-control(type="text")
+    div.input-group
+      input.form-control(type="text")
+      span.input-group-btn
+        button.btn.btn-default(type="button") Go!
+
+  h3 Buttons with dropdowns
+  p もちろんドロップダウンボタンを使うことも可能。
+  div.example
+    div.input-group
+      span.input-group-btn
+        button.btn.btn-default.dropdown-toggle(type="button", data-toggle="dropdown", aria-expanded="false")
+          | Action
+          span.caret
+        ul.dropdown-menu(role="menu")
+          li
+            a(href="#") Action
+          li
+            a(href="#") Another action
+          li
+            a(href="#") Something else here
+          li.divider
+          li
+            a(href="#") Separated link
+      input.form-control(type="text")
+
+    div.input-group
+      input.form-control(type="text")
+      span.input-group-btn
+        button.btn.btn-default(type="button") Action
+        button.btn.btn-default.dropdown-toggle(type="button", data-toggle="dropdown", aria-expanded="false")
+          span.caret
+        ul.dropdown-menu.dropdown-menu-right(role="menu")
+          li
+            a(href="#") Action
+          li
+            a(href="#") Another action
+          li
+            a(href="#") Something else here
+          li.divider
+          li
+            a(href="#") Separated link

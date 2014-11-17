@@ -34,6 +34,6 @@ body {
     content: "Example"
 }
 
-.example > .btn-group {
+.example > .btn-group, .input-group {
     margin-bottom: 15px;
 }
