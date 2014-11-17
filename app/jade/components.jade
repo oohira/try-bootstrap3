@@ -178,3 +178,107 @@ block content
           li
             a(href="#") Dropdown link
       button.btn.btn-default(type="button") Button
+
+
+  h2 Button dropdowns
+
+  h3 Single button dropdowns
+  p <code>.btn-group</code>で囲んでメニューアイテムを定義するだけでドロップダウンボタンを作れる
+  div.example
+    div.btn-group
+      button.btn.btn-default.dropdown-toggle(type="button", data-toggle="dropdown", aria-expanded="false")
+        | Default
+        span.caret
+      ul.dropdown-menu(role="menu")
+        li
+          a(href="#") Action
+        li
+          a(href="#") Another action
+        li
+          a(href="#") Something else here
+        li.divider
+        li
+          a(href="#") Separated link
+
+  h3 Split button dropdowns
+  p ドロップダウンを表示するボタンだけ分けることも可能
+  div.example
+    div.btn-group
+      button.btn.btn-default(type="button") Default
+      button.btn.btn-default.dropdown-toggle(type="button", data-toggle="dropdown", aria-expanded="false")
+        span.caret
+        span.sr-only Toggle Dropdown
+      ul.dropdown-menu(role="menu")
+        li
+          a(href="#") Action
+        li
+          a(href="#") Another action
+        li
+          a(href="#") Something else here
+        li.divider
+        li
+          a(href="#") Separated link
+
+  h3 Sizing
+  p サイズ変更も可能
+  div.example
+    div.btn-group
+      button.btn.btn-default.btn-lg.dropdown-toggle(type="button", data-toggle="dropdown", aria-expanded="false")
+        | Large button
+        span.caret
+      ul.dropdown-menu(role="menu")
+        li
+          a(href="#") Action
+        li
+          a(href="#") Another action
+        li
+          a(href="#") Something else here
+        li.divider
+        li
+          a(href="#") Separated link
+    div.btn-group
+      button.btn.btn-default.btn-sm.dropdown-toggle(type="button", data-toggle="dropdown", aria-expanded="false")
+        | Small button
+        span.caret
+      ul.dropdown-menu(role="menu")
+        li
+          a(href="#") Action
+        li
+          a(href="#") Another action
+        li
+          a(href="#") Something else here
+        li.divider
+        li
+          a(href="#") Separated link
+    div.btn-group
+      button.btn.btn-default.btn-xs.dropdown-toggle(type="button", data-toggle="dropdown", aria-expanded="false")
+        | Extra small button
+        span.caret
+      ul.dropdown-menu(role="menu")
+        li
+          a(href="#") Action
+        li
+          a(href="#") Another action
+        li
+          a(href="#") Something else here
+        li.divider
+        li
+          a(href="#") Separated link
+
+  h3 Dropup variation
+  p <code>.dropup</code>でドロップダウンメニューをボタンの上側にも表示可能
+  div.example
+    div.btn-group.dropup
+      button.btn.btn-default(type="button") Default
+      button.btn.btn-default.dropdown-toggle(type="button", data-toggle="dropdown", aria-expanded="false")
+        span.caret
+      ul.dropdown-menu(role="menu")
+        li
+          a(href="#") Action
+        li
+          a(href="#") Another action
+        li
+          a(href="#") Something else here
+        li.divider
+        li
+          a(href="#") Separated link
