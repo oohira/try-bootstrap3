@@ -373,3 +373,108 @@ block content
           li.divider
           li
             a(href="#") Separated link
+
+
+  h2 Navs
+
+  h3 Tabs
+  div.example
+    ul.nav.nav-tabs
+      li.active(role="presentation")
+        a(href="#") Home
+      li(role="presentation")
+        a(href="#") Profile
+      li(role="presentation")
+        a(href="#") Messages
+
+  h3 Pills
+  p <code>.nav-tabs</code>を<code>.nav-pills</code>に変えるだけ。
+  div.example
+    ul.nav.nav-pills
+      li.active(role="presentation")
+        a(href="#") Home
+      li(role="presentation")
+        a(href="#") Profile
+      li(role="presentation")
+        a(href="#") Messages
+
+  p <code>.nav-pills</code>に<code>.nav-stacked</code>を足すと垂直方向に配置できる。
+  div.example
+    ul.nav.nav-pills.nav-stacked(style="max-width: 300px")
+      li.active(role="presentation")
+        a(href="#") Home
+      li(role="presentation")
+        a(href="#") Profile
+      li(role="presentation")
+        a(href="#") Messages
+
+  h3 Justified
+  p <code>.nav-justified</code>を付けると幅を親要素いっぱいに広げられる。モバイルサイズでは垂直方向に並ぶ。
+  div.example
+    ul.nav.nav-tabs.nav-justified
+      li.active(role="presentation")
+        a(href="#") Home
+      li(role="presentation")
+        a(href="#") Profile
+      li(role="presentation")
+        a(href="#") Messages
+    ul.nav.nav-pills.nav-justified
+      li.active(role="presentation")
+        a(href="#") Home
+      li(role="presentation")
+        a(href="#") Profile
+      li(role="presentation")
+        a(href="#") Messages
+
+  h3 Disabled links
+  p <code>.disabled</code>でグレーアウトできる（見た目だけなので実際のリンク動作は別途JavaScriptで抑止する必要あり）。
+  div.example
+    ul.nav.nav-pills
+      li.active(role="presentation")
+        a(href="#") Clickable link
+      li(role="presentation")
+        a(href="#") Clickable link
+      li.disabled(role="presentation")
+        a(href="#") Disabled link
+
+  h3 Using dropdowns
+  p <code>.dropdown</code>でドロップダウンメニューと組み合わせることもできる。
+  div.example
+    ul.nav.nav-tabs
+      li.active(role="presentation")
+        a(href="#") Home
+      li(role="presentation")
+        a(href="#") Help
+      li.dropdown(role="presentation")
+        a.dropdown-toggle(data-toggle="dropdown", href="#", role="button" aria-expanded="false")
+          | Dropdown
+          span.caret
+        ul.dropdown-menu(role="menu")
+          li
+            a(href="#") Action
+          li
+            a(href="#") Another action
+          li
+            a(href="#") Something else here
+          li.divider
+          li
+            a(href="#") Separated link
+    ul.nav.nav-pills
+      li.active(role="presentation")
+        a(href="#") Home
+      li(role="presentation")
+        a(href="#") Help
+      li.dropdown(role="presentation")
+        a.dropdown-toggle(data-toggle="dropdown", href="#", role="button" aria-expanded="false")
+          | Dropdown
+          span.caret
+        ul.dropdown-menu(role="menu")
+          li
+            a(href="#") Action
+          li
+            a(href="#") Another action
+          li
+            a(href="#") Something else here
+          li.divider
+          li
+            a(href="#") Separated link
